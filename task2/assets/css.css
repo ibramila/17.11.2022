@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: antiquewhite;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    top: 0;
+    position: fixed;
+}
+
+.heading {
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+
+.hamburger {
+    position: absolute;
+    border: 1px solid grey;
+    background-color: aliceblue;
+    border-radius: 8px;
+    width: 30px;
+    height: 40px;
+    top: 3px;
+    right: 10px;
+    z-index: 99;
+}
+
+.line1,
+.line2,
+.line3 {
+    position: absolute;
+    top: 0;
+    right: -3px;
+    width: 18px;
+    height: 1px;
+    color: brown;
+    border: 0.1px solid grey;
+    background-color: grey;
+    border-radius: 3px;
+    border-width: 2px;
+}
+
+.line1 {
+    margin: 6px;
+}
+
+.line2 {
+    margin: 16px 6px;
+}
+
+.line3 {
+    margin: 26px 6px;
+}
+
+.menu {
+    padding-right: 20px;
+    position: absolute;
+    background: white;
+    border: 2px solid greenyellow;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 300px;
+    overflow-y: scroll;
+    color: black;
+    visibility: hidden;
+
+}
+
+ul {
+    list-style-type: none;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hamburger:focus + .menu {
+    right: 0;
+    top: 50px;
+    visibility: visible;
+
+}
+
+.btn {
+    font-size: 20px;
+    margin: 10px 20px;
+    background-color: aqua;
+    display: block;
+    border-width: medium;
+}
+
+.btn:focus+p {
+    display: block;
+}
+
+p {
+    display: none;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.65;
+}
+
+img:hover {
+    opacity: 1;
+}

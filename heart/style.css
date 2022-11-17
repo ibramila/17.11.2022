@@ -1,7 +1,6 @@
 .contain {
     height: 100vh;
     margin: 0;
-    border: 1px solid rebeccapurple;
     position: relative;
 }
 
@@ -13,14 +12,19 @@
 }
 
 .number {
-    border: 1px solid red;
     background-color: black;
     border-radius: 50%;
-    line-height: 2px;
-    width: 30px;
     top: 69px;
     right: 76px;
     position: absolute;
     color: aliceblue;
     text-align: center;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+button {
+    color: black;
+    background-color: red;
+    display: block;
 }

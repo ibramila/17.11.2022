@@ -1,16 +1,17 @@
 .main{
     height: 100vh;
-    border: 1px solid red;
     position: relative;
 }
 .contain{
     position: absolute;
-    border: 1px solid red;
-    top: 10%;
-    left: 40%;
-    overflow-x: scroll;;
-    width: 300px;
-    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow-y: scroll;
+    width: 400px;
+    height: 500px;
+    border: 1px dotted blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contain h2{
     text-align: center;
@@ -18,4 +19,10 @@
     position: sticky;
     top: 0; 
     background-color: aliceblue ;
+    text-align: center;
+    text-shadow: 2px 2px 2px violet;
+}
+.contain p{
+    text-align: justify;
+    padding: 0 10px;
 }
